@@ -1,12 +1,13 @@
 {
   "name": "front-starter",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,13 +17,16 @@
     "tailwindcss": "^4.1.5"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.13.0",
+    "@eslint-react/eslint-plugin": "^1.49.0",
     "@eslint/js": "^9.22.0",
+    "@types/node": "^22.15.17",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.22.0",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.0.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.26.1",
